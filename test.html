@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web 应用程序</title>
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.3.2.min.css">
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<script src="js/cordova-2.3.0.js" type="text/javascript"></script>
+<script src="js/jquery-1.9.0.js"></script>
+<script src="js/main.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.2.min.js"></script>
+<script>
+
+</script>
+</head> 
+<body> 
+
+
+<div  id="search" data-role="page" data-theme="b">
+<header data-role="header" data-position="fixed">
+	<select data-native-menu="false" >
+		 <option value="mon">Sydney</option>
+		 <option value="mon">Canberra</option>
+	</select>
+	<input type="search" name="search" id="search" placeholder="restaurants / surbub / postcode">
+</header>
+	<div data-role="content"  data-theme="c">
+	
+			
+		<ul data-role="listview">
+			<li><a href="#">第 2 页</a></li>
+		</ul>
+	<br/>
+		<a href="test.html" data-role="button" data-icon="home" data-iconpos="right" data-transition="pop">块按钮</a>	
+		<a href="c.html" data-role="button" data-inline="true" data-corners="false">c按钮</a>
+		<a href="b.html" data-role="button" data-inline="true" data-mini="true" data-shadow >b按钮</a>
+		<a href="iscroll.html" data-role="button" data-inline="true" data-mini="true" data-shadow >iscroll按钮</a>
+		
+		<div data-role="controlgroup" data-type="horizontal">
+		  <a href="#anylink" data-role="button">按钮 1</a>
+		  <a href="#anylink" data-role="button">按钮 2</a>
+		  <a href="#anylink" data-role="button">按钮 3</a>
+		</div>
+		
+	<div data-role="collapsible-set" data-inset="false"  data-mini="true">
+      <div data-role="collapsible" data-collapsed-icon="arrow-d" data-expanded-icon="arrow-u">
+         <h4>A</h4>
+   		 <ul data-role="listview">
+     		 <li><a href="#">Adam</a></li>
+      		<li><a href="#">Angela</a></li>
+   		 </ul>
+      </div>
+	  
+      <div data-role="collapsible">
+        <h3>点击我 - 我可以折叠！</h3>
+        <p>我是可折叠的内容。</p>
+      </div>
+    </div>
+		
+        <select data-native-menu="false">
+         <option value="mon">星期一</option>
+         <option value="tue">星期二</option>
+         <option value="wed">星期三</option>
+         <option value="thu">星期四</option>
+         <option value="fri">星期五</option>
+         <option value="sat">星期六</option>
+         <option value="sun">星期日</option>
+        </select>
+		
+	<br />
+	<ul data-role="listview" data-theme="c" data-inset="true">
+	  	<li data-role="list-divider">a</li>
+		<li>
+		<img src="images/myapptb.png" class="ui-li-icon" />
+			<h4><a href="index.html">nimei</a></h4>
+			<span class="ui-li-count">12</span>
+		</li>
+		<li data-role="list-divider">b</li>
+		<li>
+			<img src="images/dog.jpg" />
+			<h3><a href="index.html">nima</a></h3>	
+			<span class="ui-li-aside">已卸载</span>
+		</li>	
+	  </ul>
+		<br />
+		
+		
+		<input type="text" name="fullname" id="fullname" > 
+		<input type="search" name="search" id="search" placeholder="搜索内容...">
+		<label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="male" data-mini="true" >
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="female" data-mini="true" >
+		
+		<fieldset data-role="controlgroup"  data-type="horizontal">
+        <legend>请选择您喜爱的颜色：</legend>
+          <label for="red">红色</label>
+          <input type="checkbox" name="favcolor" id="red" value="red">
+          <label for="green">绿色</label>
+          <input type="checkbox" name="favcolor" id="green" value="green">
+          <label for="blue">蓝色</label>
+          <input type="checkbox" name="favcolor" id="blue" value="blue">	
+      </fieldset>
+      <input type="submit" data-inline="true" value="提交">
+
+	  <input type="range" value="5" min="0" max="10" data-highlight="true" data-mini="true"/>
+	  
+		<select data-role="slider">
+			<option value="on">ON</option>
+			<option value="off">OFF</option>
+		</select>
+	  
+	   <fieldset data-role="controlgroup" data-type="horizontal">
+      <legend>请选择您的性别：</legend>
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="female">女性</label>
+        <input type="radio" name="gender" id="female" value="female" checked>	
+      </fieldset>
+	
+	</div>
+	<footer data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="home" >Home</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#" data-icon="gear">More</a></li>
+			  </ul>
+		</div>
+	</footer>
+</div>
+
+
+</body>
+</html>

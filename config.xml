@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id = "com.Mp.myapp"
+        versionCode="10" 
+        version   = "2.0.0">
+    <!-- versionCode is optional and Android only -->
+    <name>Yummy !</name>
+    <description>
+		Yummy Mobile Test !
+    </description>
+    <author href="http://www.yum-my.com.au" email="729934561@qq.com">
+		Du
+    </author>
+    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="webviewbounce" value="false" />
+    <icon src="images/logo.png" />
+    <gap:splash src="images/splash.png" />
+</widget>

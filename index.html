@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web 应用程序</title>
+<link rel="stylesheet" href="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.css">
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.4.1/jquery.mobile-1.4.1.min.js"></script>
+<script src="js/cordova-2.3.0.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+
+</script>
+<style type="text/css">
+
+</style>
+</head> 
+<body> 
+
+<!----------------------search---------------------->
+<div  id="search" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<select data-native-menu="false" data-inline="true">
+		 <option value="mon">Sydney</option>
+		 <option value="mon">Canberra</option>
+	</select>
+	<input type="search"  name="search" id="search" placeholder="restaurants / surbub / postcode">
+</header>
+	<div data-role="content"  data-theme="c">
+	<!--test-->
+	<p id="deviceProperties">Loading device properties...</p>
+	<!--test-->	
+	
+		<div id="wrapper">
+			<div id="scroller">
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">Pull down to refresh...</span>
+				</div>
+				<ul id="thelist" data-role="listview">
+				
+<!--				<li>
+			 	<a href="#restaurant">
+					<img src="images/restaurant01.jpg" height="80" width="80" style="padding:10px;">
+					<h2>Cafe Sydney</h2>
+        			<p>281 Glen Huntly Rd 222, Sydney.Australia</p>
+					<p>ThaiAsian Takes Reservations</p>
+					<p>$56.00  &nbsp;<b> Rating: 4.9</b></p>
+				</a>
+				</li>	-->
+
+					<li>Pretty row 1</li>
+					<li>Pretty row 2</li>
+					<li>Pretty row 3</li>
+					<li>Pretty row 4</li>
+					<li>Pretty row 5</li>
+					<li>Pretty row 6</li>
+					<li>Pretty row 7</li>
+					<li>Pretty row 8</li>
+					<li>Pretty row 9</li>
+					<li>Pretty row 10</li>
+					<li>Pretty row 11</li>
+					<li>Pretty row 12</li>
+					<li>Pretty row 13</li>
+					<li>Pretty row 14</li>
+					<li>Pretty row 15</li>
+				</ul>
+				<div id="pullUp">
+					<span class="pullUpIcon"></span><span class="pullUpLabel">Pull up to refresh...</span>
+				</div>
+			</div>
+		</div>
+
+<!--		<ul data-role="listview">
+			 <li>
+			 	<a href="#restaurant">
+					<img src="images/restaurant01.jpg" height="80" width="80" style="padding:10px;">
+					<h2>Cafe Sydney</h2>
+        			<p>281 Glen Huntly Rd 222, Sydney.Australia</p>
+					<p>ThaiAsian Takes Reservations</p>
+					<p>$56.00  &nbsp;<b> Rating: 4.9</b></p>
+				</a>
+			</li>	
+			<li>
+			 	<a href="#restaurant">
+					<img src="images/restaurant02.jpg" height="80" width="80" style="padding:10px;">
+					<h2>Wasabi Sushi & Bento</h2>
+        			<p>281 Glen Huntly Rd 222, Sydney.Australia</p>
+					<p>ThaiAsian	Takes Reservations</p>
+					<p>$38.00 &nbsp;<b> Rating: 4.9</b></p>
+				</a>
+			</li>	
+			<li>
+			 	<a href="#restaurant">
+					<img src="images/restaurant02.jpg" height="80" width="80" style="padding:10px;">
+					<h2>Wasabi Sushi & Bento</h2>
+        			<p>281 Glen Huntly Rd 222, Sydney.Australia</p>
+					<p>ThaiAsian	Takes Reservations</p>
+					<p>$38.00 &nbsp;<b> Rating: 4.9</b></p>
+				</a>
+			</li>	
+    </ul>-->
+	</div>
+	<footer data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			  </ul>
+		</div>
+	</footer>
+</div>
+
+<!------------------------------------------my------------------------------------------>
+<div id="my" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<a href="#sign_up">Sign up</a>
+	<h1>My</h1>
+	<a href="#login">Login</a>
+</header>
+<div data-role="content">
+	<h1>UserCenter</h1>
+	<a href="#duihuakuang" data-rel="dialog" data-role="button">转到对话框</a>
+	
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			  </ul>
+	</div>
+</footer>
+</div>
+
+<!------------------------------------------login------------------------------------------>
+<div id="login" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<a href="#" data-rel="back" data-icon="back">Return</a>
+	<h1>Yummy Login</h1>
+</header>
+<div data-role="content">
+	<input type="text" placeholder="Email / Mobile / Username" />
+	<input type="text" placeholder="Password" />
+	<input type="submit" value="Login" />
+	<a href="#">forgot password</a>
+	<a href="#sign_up">sign up</a>
+	<br />
+	<p>We appreciate it if you use social accounts to sign up or log in with Yummy</p>
+	<img src="images/f100.png" width="50" height="50"/>
+	<img src="images/t100.png" width="50" height="50"/>
+	<img src="images/g100.png" width="50" height="50"/>	
+	<img src="images/w100.png" width="50" height="50"/>
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			  </ul>
+	</div>
+</footer>
+</div>
+
+<!-----------------------------sign_up---------------------------------------------->
+<div id="sign_up" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<a href="#" data-rel="back" data-icon="back">Return</a>
+	<h1>Yummy Login</h1>
+</header>
+<div data-role="content">
+	<input type="text" placeholder="Username" />
+	<input type="text" placeholder="Email or Mobile" />
+	<input type="text" placeholder="Password" />
+	<input type="text" placeholder="Confirm Password" />
+	<input type="text" placeholder="Are U human?" />
+	<img src="images/code.png" />
+	<input type="submit" value="Sign up" />
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			  </ul>
+	</div>
+</footer>
+</div>
+
+
+<!-----------------------------more---------------------------------------------->
+<div id="more" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<h1>More</h1>
+</header>
+<div data-role="content">
+		<h1>向右滑出面板</h1>
+		<div data-role="controlgroup">
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Sweep The Qr Code</a>
+		</div>
+		<div data-role="controlgroup">
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Share With Friends</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Feedback To Us</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Common Settings</a>
+		</div>
+		<div data-role="controlgroup">
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">About Us</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home" >Terms Of Service</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home" >Instruction For Newbies</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home" >Sign out</a>
+		</div>
+		<!--panel-->
+		<div data-role="panel" id="left-panel" data-display="overlay">
+    		<h2>左侧面板</h2>
+			<div data-role="controlgroup">
+		  		<a href="#" data-role="button" data-theme="c" data-icon="home">扫一扫</a>
+		  		<a href="#" data-role="button" data-theme="c" data-icon="home" >摇一摇</a>
+				<a href="#map" data-role="button" data-theme="c" data-icon="home" >GPS</a>
+			</div>
+		</div>
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			  </ul>
+	</div>
+</footer>
+</div>
+
+<!-----------------------------restaurant---------------------------------------------->
+<div id="restaurant" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<a href="#" data-rel="back" data-icon="back">Return</a>
+	<h1>Restaurant</h1>
+	<a href="#" data-icon="star">Share</a>
+</header>
+<div data-role="content">
+		<h4>Cafe Sydney</h4>
+		<p><img src="images/restaurant01.jpg" height="140" style="float:right"></p>
+		<h6>Reviews: 1083</h6>
+		<h6>Follows: 400</h6>
+		<h6>Taste: 5.0pts</h6>
+		<h6>Service: 5.0pts</h6>
+		<h6>Environment: 5.0pts</h6>
+		<div style="clear:both;"></div>
+		<h5>Cuisine: Thai Asian Takes Reservations</h5>
+		<h5>$56.00</h5>
+		<a href="#" data-role="button" data-inline="true" data-mini="true" data-icon="grid" data-theme="c" data-corners="false">Menu</a>
+		<a href="#" data-role="button" data-mini="true" data-theme="c" data-icon="home">Address: 281 Glen Huntly Rd 222, Sydney.Australia</a>
+		<a href="#" data-role="button" data-mini="true" data-theme="c" data-icon="home">Call: (400) 0065 8100</a>			
+		<div data-role="controlgroup" data-type="horizontal"><!---->
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Add Review</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">Add Photo</a>
+		  <a href="#" data-role="button" data-theme="c" data-icon="home">BookMark</a>
+		</div>	
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			 </ul>
+	</div>
+</footer>
+</div>
+<!-----------------------------map---------------------------------------------->
+<div id="map" data-role="page" data-theme="a">
+<header data-role="header" data-position="fixed">
+	<a href="#" data-rel="back" data-icon="back">Return</a>
+	<h1>Map</h1>
+</header>
+<div data-role="content" style="padding:0px; height:100%;">
+
+<!--<iframe style="width:100%; height:500px; border:none;" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.au/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=39.90403,116.407526&amp;aq=&amp;ie=UTF8&amp;t=m&amp;z=16&amp;ll=39.90403,116.407526&amp;output=embed"></iframe>-->
+
+<iframe style="width:100%; height:500px; border:none;"  width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://ditu.google.cn/maps?hl=zh-CN&amp;ie=UTF8&amp;hq=&amp;hnear=%E5%8C%97%E4%BA%AC%E5%B8%82&amp;ll=39.874966,116.50589&amp;spn=0.646051,2.113495&amp;t=m&amp;z=10&amp;brcurrent=3,0x35f05296e7142cb9:0xb9625620af0fa98a,1%3B5,0,1&amp;output=embed"></iframe>
+
+</div>
+<footer data-role="footer" data-position="fixed">
+	<div data-role="navbar">
+		  <ul class="ui-btn-active ui-state-persist" >
+			  		<li><a href="#search" data-icon="search">Search</a></li>
+					<li><a href="#" data-icon="star" >Coupons</a></li>
+					<li><a href="#my" data-icon="info">My</a></li>
+					<li><a href="#more" data-icon="gear">More</a></li>
+			 </ul>
+	</div>
+</footer>
+</div>
+
+<!------------------------- 对话框-------------------------->
+<div data-role="page" id="duihuakuang">
+<!--  <div data-role="header">
+    <h1>温馨提示</h1>
+  </div>-->
+  <div data-role="content">
+    <p>对话框与普通页面不同，它显示在当前页面的顶端。它不会横跨整个页面宽度。对话框页眉中的图标 “X” 可关闭对话框。</p>
+	<a id="yes" data-rel="back" data-inline="true" data-role="button" >Yes</a>
+	<a id="cancel" data-rel="back" data-inline="true"  data-role="button" >Cancel</a>
+  </div>
+  <!--<div data-role="footer">
+  <h1>页脚文本</h1>
+  </div>-->
+</div> 
+
+</body>
+</html>
