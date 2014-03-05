@@ -12,8 +12,8 @@
     <author href="http://www.yum-my.com.au" email="729934561@qq.com">
 		Du
     </author>
-    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="phonegap-version" value="3.1.0" />
     <preference name="webviewbounce" value="false" />
     <icon src="images/logo.png" />
     <gap:splash src="images/splash.png" />
-</widget>
+ </widget>
